@@ -1,46 +1,41 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tauri App</title>
-    <script type="module" src="/main.js" defer></script>
-    <style>
-      .logo.vanilla:hover {
-        filter: drop-shadow(0 0 2em #ffe21c);
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="container">
-      <h1>Welcome to Tauri!</h1>
-
-      <div class="row">
-        <a href="https://tauri.app" target="_blank">
-          <img src="/assets/tauri.svg" class="logo tauri" alt="Tauri logo" />
-        </a>
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-          target="_blank"
-        >
-          <img
-            src="/assets/javascript.svg"
-            class="logo vanilla"
-            alt="JavaScript logo"
-          />
-        </a>
-      </div>
-
-      <p>Click on the Tauri logo to learn more about the framework</p>
-
-      <form class="row" id="greet-form">
-        <input id="greet-input" placeholder="Enter a name..." />
-        <button type="submit">Greet</button>
-      </form>
-
-      <p id="greet-msg"></p>
-    </div>
-  </body>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="Triple Uni">
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFFFF">
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
+        <link rel="manifest" href="/manifest.json">
+        <script src="/js/script.js" data-website-id="a9ae199b-66c0-4982-b021-0c8a6ade8691"></script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "Triple Uni",
+                "alternateName": [
+                    "TripleUni",
+                    "HKU噗噗",
+                    "薄扶林噗噗",
+                    "马料水BB机",
+                    "马料水哔哔机",
+                    "科大星尘",
+                    "Stardust"
+                ],
+                "url": "https://tripleuni.com/"
+            }</script>
+        <title>Triple Uni</title>
+        <script defer="defer" src="/js/chunk-vendors.6f420812.js"></script>
+        <script defer="defer" src="/js/app.4f3cf818.js"></script>
+        <link href="/css/chunk-vendors.75746f9d.css" rel="stylesheet">
+        <link href="/css/app.a6b8ab2d.css" rel="stylesheet">
+    </head>
+    <body style="margin: 0;">
+        <noscript>
+            <strong>We're sorry but Triple Uni doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+        </noscript>
+        <div id="app"></div>
+    </body>
 </html>

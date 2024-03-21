@@ -1,0 +1,83 @@
+{
+    "short_name": "Triple Uni",
+    "name": "Triple Uni",
+    "icons": [
+       {
+        "src": "/icon-PWA/mac-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "any"
+      },
+      {
+        "src": "/icon-PWA/mac-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192",
+        "purpose": "any"
+      },
+      {
+        "src": "/icon-PWA/android-chrome-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512",
+        "purpose": "maskable"
+      },
+      {
+        "src": "/icon-PWA/android-chrome-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192",
+        "purpose": "maskable"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "https://i.boatonland.com/webapp/screenshots/1.jpg",
+        "type": "image/jpg",
+        "sizes": "1242x2688"
+      },
+      {
+        "src": "https://i.boatonland.com/webapp/screenshots/2.jpg",
+        "type": "image/jpg",
+        "sizes": "1242x2688"
+      },
+      {
+        "src": "https://i.boatonland.com/webapp/screenshots/3.jpg",
+        "type": "image/jpg",
+        "sizes": "1242x2688"
+      },
+      {
+        "src": "https://i.boatonland.com/webapp/screenshots/4.jpg",
+        "type": "image/jpg",
+        "sizes": "1242x2688"
+      },
+      {
+        "src": "https://i.boatonland.com/webapp/screenshots/5.jpg",
+        "type": "image/jpg",
+        "sizes": "1242x2688"
+      },
+      {
+        "src": "https://i.boatonland.com/webapp/screenshots/6.jpg",
+        "type": "image/jpg",
+        "sizes": "1242x2688"
+      },
+      {
+        "src": "https://i.boatonland.com/webapp/screenshots/7.jpg",
+        "type": "image/jpg",
+        "sizes": "1242x2688"
+      }
+    ],
+    "start_url": "/home",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#ffffff",
+    "shortcuts": [
+      {
+        "name": "搜索",
+        "url": "/search"
+      },
+      {
+        "name": "发布树洞",
+        "url": "/write"
+      }
+    ],
+    "description": "Triple Uni 是接通“HKU噗噗”，“马料水哔哔机”及“Stardust 科大空间站”的三校匿名树洞的社交平台，旨在打造港校交流的小宇宙，你将在这里观测到每一颗其他行星，通过Triple Uni与每一颗行星碰撞交流~"
+  }
