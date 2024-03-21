@@ -27,6 +27,3 @@ custom-protocol = ["tauri/custom-protocol"]
 name = "poocano_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
-[[bin]]
-name = "poocano"
-path = "src-tauri/main.rs"

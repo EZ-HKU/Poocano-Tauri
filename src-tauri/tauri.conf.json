@@ -11,7 +11,6 @@
       "icons/32x32.png",
       "icons/128x128.png",
       "icons/128x128@2x.png",
-      "icons/icon.icns",
       "icons/icon.ico"
     ]
   },
@@ -23,12 +22,9 @@
     "withGlobalTauri": true,
     "windows": [
       {
-        "fullscreen": false,
-        "resizable": true,
         "title": "Poocano",
         "width": 1400,
-        "height": 800,
-        "transparent": true
+        "height": 800
       }
     ],
     "security": {
