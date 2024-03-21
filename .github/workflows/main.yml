@@ -28,6 +28,14 @@ jobs:
 
       - name: Rust setup
         uses: dtolnay/rust-toolchain@beta
+      
+      - name: install x86_64-pc-windows-msvc for 'ubuntu-20.04'
+        if: matrix.platform == 'ubuntu-20.04'
+        run: rustup target add x86_64-pc-windows-msvc
+
+      - name: install x86_64-pc-windows-msvc for 'macos-latest'
+        if: matrix.platform == 'macos-latest'
+        run: rustup target add x86_64-pc-windows-msvc
 
       - name: Rust cache
         uses: swatinem/rust-cache@v2
