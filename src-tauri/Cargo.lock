@@ -2234,7 +2234,7 @@ dependencies = [
 
 [[package]]
 name = "poocano"
-version = "2.1.2"
+version = "2.1.5"
 dependencies = [
  "serde",
  "serde_json",
