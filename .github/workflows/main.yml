@@ -12,22 +12,22 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        platform: [macos-latest, ubuntu-20.04, windows-latest]
+        platform: [macos-latest, windows-latest]
     runs-on: ${{ matrix.platform }}
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install dependencies (ubuntu only)
-        if: matrix.platform == 'ubuntu-20.04'
-        # You can remove libayatana-appindicator3-dev if you don't use the system tray feature.
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.0-dev libayatana-appindicator3-dev librsvg2-dev libglib2.0-*
-        # set PKG_CONFIG_PATH environment variable for entire job
-        env:
-          PKG_CONFIG_PATH: /usr/lib/x86_64-linux-gnu/pkgconfig
+      # - name: Install dependencies (ubuntu only)
+      #   if: matrix.platform == 'ubuntu-20.04'
+      #   # You can remove libayatana-appindicator3-dev if you don't use the system tray feature.
+      #   run: |
+      #     sudo apt-get update
+      #     sudo apt-get install -y libgtk-3-dev libwebkit2gtk-4.0-dev libayatana-appindicator3-dev librsvg2-dev libglib2.0-*
+      #   # set PKG_CONFIG_PATH environment variable for entire job
+      #   env:
+      #     PKG_CONFIG_PATH: /usr/lib/x86_64-linux-gnu/pkgconfig
         
 
       - name: Rust setup
@@ -55,7 +55,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tagName: ${{ github.ref_name }} # This only works if your workflow triggers on new tags.
-          releaseName: 'App Name v__VERSION__' # tauri-action replaces \_\_VERSION\_\_ with the app version.
+          releaseName: 'Poocano v__VERSION__' # tauri-action replaces \_\_VERSION\_\_ with the app version.
           releaseBody: 'See the assets to download and install this version.'
           releaseDraft: true
           prerelease: false
