@@ -13599,56 +13599,7 @@
           ["fullscreen", "standalone", "minimal-ui"].some(
             (e) => window.matchMedia("(display-mode: " + e + ")").matches
           );
-        if (!Vo())
-          if (/(MicroMessenger|QQ)/i.test(navigator.userAgent))
-            s["default"].$modal.show({
-              title: d.t("Install.wechat_title"),
-              content: d.t("Install.wechat_content"),
-              show_cancel: !1,
-            });
-          else if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent))
-            /(CriOS|FxiOS)/i.test(navigator.userAgent)
-              ? s["default"].$modal.show({
-                  title: d.t("Install.ios_nonsafari_title"),
-                  content: d.t("Install.ios_nonsafari_content"),
-                  show_cancel: !1,
-                })
-              : setTimeout(() => {
-                  s["default"].$modal.show({
-                    title: d.t("Install.ios_safari_title"),
-                    content: d.t("Install.ios_safari_content"),
-                    show_cancel: !1,
-                    success: () => {
-                      setTimeout(() => {
-                        s["default"].$modal.show({
-                          title: d.t("Install.ios_safari_title_again"),
-                          content: d.t("Install.ios_safari_content_again"),
-                          show_cancel: !1,
-                        });
-                      }, 500);
-                    },
-                  });
-                }, 500);
-          else if (/(Android)/i.test(navigator.userAgent))
-            if (/Chrome/i.test(navigator.userAgent)) {
-              var Xo = navigator.userAgent.match(/Chrome\/(\d+)/),
-                Zo = Xo && parseInt(Xo[1]);
-              Zo < 100
-                ? s["default"].$modal.show({
-                    title: d.t("Install.android_nonchrome_title"),
-                    content: d.t("Install.android_nonchrome_content"),
-                    show_cancel: !1,
-                  })
-                : (s["default"].$loading.show(),
-                  setTimeout(() => {
-                    s["default"].$loading.hide();
-                  }, 5e3));
-            } else
-              s["default"].$modal.show({
-                title: d.t("Install.android_nonchrome_title"),
-                content: d.t("Install.android_nonchrome_content"),
-                show_cancel: !1,
-              });
+          
         localStorage.getItem("token") &&
           (k(),
           Ms("/user/terms/check").then((e) => {
