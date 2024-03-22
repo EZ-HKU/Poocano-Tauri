@@ -1,6 +1,6 @@
 [package]
 name = "poocano"
-version = "2.1.1"
+version = "2.1.2"
 description = "A Tauri App"
 authors = ["adlsdztony"]
 license = ""
@@ -16,7 +16,7 @@ tauri-build = { version = "2.0.0-beta", features = [] }
 tauri = { version = "2.0.0-beta", features = [] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-tauri-plugin-shell = "2.0.0-beta.3"
+tauri-plugin-shell = "2.0.0-beta"
 
 [features]
 # this feature is used for production builds or when `devPath` points to the filesystem
